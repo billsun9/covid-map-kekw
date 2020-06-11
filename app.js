@@ -2,8 +2,8 @@
 function initMap() {
     // map params
     let options = {
-        zoom: 7,
-        center: {lat:33.7490, lng:-84.3880} //centers at atlanta, GA
+        zoom: 6.5,
+        center: {lat:32.8407, lng:-83.6324} //centers at Macon, GA
     }
     // The map object
     let map = new google.maps.Map(

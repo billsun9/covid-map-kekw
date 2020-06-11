@@ -3,10 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+body {
+    background: rgb(235, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+    color: rgb(15, 147, 187);
+    font-weight: 700;
+}
+header {
+    margin: 2vw 2vh;
+}
 /* Set the size of the div element that contains the map */
 #map {
-    height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
+    height: 500px;  /* The height is 500 pixels */
+    width: 100%;
+}
+hr {
+    border: 1.5px solid #2391da;
 }
