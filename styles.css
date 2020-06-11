@@ -11,6 +11,11 @@ header h1 {
     color: rgb(15, 147, 187);
     font-weight: 700;
 }
+header .synop {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(51, 47, 47);
+}
 header {
     margin: 2vw 2vh;
 }
