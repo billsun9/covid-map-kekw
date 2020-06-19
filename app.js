@@ -18,7 +18,7 @@ function initMap() {
     // map params
     let options = {
         zoom: 4.5,
-        center: {lat:39.8283459, lng:-98.5794797} //centers at Macon, GA
+        center: {lat:39.8283459, lng:-98.5794797} //center of the United States
     }
     // The map object
     let map = new google.maps.Map(
