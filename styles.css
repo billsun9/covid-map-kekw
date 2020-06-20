@@ -55,3 +55,9 @@ hr {
 .show {
     display: block;
 }
+
+#guidelines p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(51, 47, 47);
+}
