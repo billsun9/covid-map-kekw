@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Time</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="quiz-area">
+                <div class="question q1">
+                    <div class="prompt">
+                        This brief questionaire's purpose is to help you make informed decisions about seeking appropriate medical 
+                        treatment regarding COVID-19. It should not be used as a diagnostic tool for COVID-19 or any other disease. 
+                        If you have any additional concerns, please contact a trained professional.
+                    </div>
+                    <div class="choice">
+                        I agree
+                        <button data-next="q2">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        I don't agree
+                        <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fas fa-plus-square"></i></a></button>
+                    </div>
+                </div>
+                <div class="question q2 hide">
+                    <div class="prompt">
+                        Do you have any life-threatening symptoms?
+                        <ul style="margin: 0 2vw; line-height: 1.1;">
+                            <li>Bluish lips or face</li>
+                            <li>Severe and constant pain or pressure in the chest</li>
+                            <li>Extreme difficulty breathing (gasping for air or cannot talk without catching your breath)</li>
+                            <li>Severe and constant dizziness or lightheadedness</li>
+                            <li>Slurred speech (new or worsening)</li>
+                            <li>Seizures</li>
+                            <li>Signs of low blood pressure (too weak to stand, light headed, feeling cold, pale, clammy skin)</li>
+                        </ul>
+                    </div>
+                    <div class="choice">
+                        Yes
+                        <button data-next="r1">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        No
+                        <button data-next="q3">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="question q3 hide">
+                    <div class="prompt">What is your gender?</div>
+                    <div class="choice">
+                        Male
+                        <button data-next="q4">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        Female
+                        <button data-next="q4">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="question q4 hide">
+                    <div class="prompt">What is your age?</div>
+                    <div class="choice">
+                        16-29
+                        <button data-next="q5">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        30-39
+                        <button data-next="q5">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        40-49
+                        <button data-next="q5">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        50-59
+                        <button data-next="q5">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        60-69
+                        <button data-next="q5">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        70-99
+                        <button data-next="q5">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="question q5 hide">
+                    <div class="prompt">Are you feeling ill?</div>
+                    <div class="choice">
+                        Yes
+                        <button data-next="q6">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        No
+                        <button data-next="r2">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="question q6 hide">
+                    <div class="prompt">
+                        Do you have any of the following symptoms?
+                        <ul style="margin: 0 2vw; line-height: 1.1;">
+                            <li>Fever</li>
+                            <li>Cough</li>
+                            <li>Mild to moderate difficulty breathing</li>
+                            <li>Sore throat</li>
+                            <li>Vomiting or diarrhea</li>
+                            <li>Nausea</li>
+                            <li>Muscle aches or body aches</li>
+                            <li>Other unusual symptoms</li>
+                        </ul>
+                    </div>
+                    <div class="choice">
+                        Yes
+                        <button data-next="q7">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        No
+                        <button data-next="q7">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="question q7 hide">
+                    <div class="prompt">Have you been in contact with a person who has been confirmed to have COVID-19 within the past 2 weeks?</div>
+                    <div class="choice">
+                        Yes
+                        <button data-next="r3">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        No
+                        <button data-next="r4">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                    <div class="choice">
+                        I'm not sure
+                        <button data-next="r4">
+                            <i class="fas fa-plus-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="question r1 hide">
+                    <div class="prompt">
+                        <b>Urgent medical attention may be needed. Please call 911 or go to the nearest Emergency Department.</b>
+                        <br>
+                        Based on your symptoms, you may need urgent medical care. Please take immediate action and contact a trained professional. See the interactive map for nearby testing centres.
+                    </div>
+                </div>
+                <div class="question r2 hide">
+                    <div class="prompt">
+                        <b>Do not require any immediate medical attention</b>
+                        <br>
+                        Based on your lack of relevant symptoms, you likely do not require any immediate medical attention. However, if any symptoms do emerge, please contact a trained professional. See the interactive map for nearby testing centres.
+                    </div> 
+                </div>
+                <div class="question r3 hide">
+                    <div class="prompt">
+                        <b>If symptoms persist, worsen, or new issues emerge, immediately seek medical treatment</b>
+                        <br>
+                        Based on your responses, you have contracted COVID-19. If your symptoms do not improve within the next 1-2 weeks, 
+                        or if new more-threatening symptoms emerge, please take immediate action and contact a trained professional. See the interactive map for nearby testing centres.
+                    </div>
+                </div>
+                <div class="question r4 hide">
+                    <div class="prompt">
+                        <b>Although you are not feeling well, you likely have not contracted COVID-19</b>
+                        <br>
+                        Based on your symptoms and lack of contact with a confirmed case of COVID-19, you are probably okay. Be sure to monitor for symptoms and to seek medical care if necessary. See the interactive map for nearby testing centres.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./survey.js"></script>
+</body>
+</html>

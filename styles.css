@@ -7,6 +7,28 @@ body {
     background: rgb(235, 235, 235);
     font-family: Arial, Helvetica, sans-serif;
 }
+.navbar {
+    background: #333;
+}
+.navbar ul {
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 14px 20px;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.navbar li:hover {
+    background: rgb(37, 86, 133);
+    transition: ease all 0.5s;
+}
+.navbar .active {
+    font-weight: bold;
+    background: rgb(58, 87, 114);
+}
 header h1 {
     color: rgb(15, 147, 187);
     font-weight: 700;
@@ -17,7 +39,7 @@ header .synop {
     color: rgb(51, 47, 47);
 }
 header {
-    margin: 2vw 2vh;
+    margin: 2vw 0;
 }
 /* Set the size of the div element that contains the map */
 #map {
@@ -26,4 +48,10 @@ header {
 }
 hr {
     border: 1.5px solid #2391da;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
